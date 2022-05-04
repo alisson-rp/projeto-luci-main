@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal&family=Ubuntu:ital,wght@1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(45deg, #e6e4ff,#f5f2c5,#dff8ac,#fab8b8);
+    background-size: 300%, 300%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cabeçalho-imagem {
+    border-radius: 50%;
+    height: 125px;
+}
+
+.cabeçalho-menu {
+    display: flex;
+    gap: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #CA965C;
+    text-shadow: rgb(255, 175, 175) 0.1em 0.1em 0.2em;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.conteudo{
+    border-top: 0.4px solid #FFCBCB;
+}
+
+.conteudo-principal{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo{
+    font-family: 'Ubuntu', sans-serif;
+    color: #CA965C;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.conteudo-principal-escrito-subtitulo{
+    font-family: 'Ubuntu', sans-serif;
+    color: #f5c083;
+    text-shadow:  rgb(248, 225, 174) 0.1em 0.1em 0.2em;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.conteudo-principal-imagem{
+    display:flex;
+    border-radius: 50px;
+    width:350px;
+    padding: 30px;
+}
+
+.conteudo-secundario{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;;
+}
+
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid #FFCBCB;
+    padding-top: 48px;
+}
+
+.conteudo-secundario-titulo{
+    font-family: 'Ubuntu', sans-serif;
+    color: #CA965C;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.conteudo-secundario-paragrafo{
+    font-family: 'Ubuntu', sans-serif;
+    color: #f5c083;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 32px;
+}
+
+.rodape{
+    padding: 32px;
+    border-top: 0.4px solid #FFCBCB;
+}
+
+.rodape-imagem{
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+    width:200px;
+}
